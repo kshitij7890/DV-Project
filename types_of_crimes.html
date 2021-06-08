@@ -38,27 +38,221 @@
               </div>
             </header>
 
-            <!--Percentage of Each Crime between 2001 - 2014 (Piechart)-->
-            <br>Percentage of Each Crime between 2001 - 2014<br>
-            <iframe height="500px" width="90%" src="https://chart-studio.plotly.com/~kshitij7890/32.embed"></iframe><br><br><br>
+            <section class="main-banner">
+            <h3><center>Percentage of Each Crime between 2001 - 2014</center></h3><br>
+            <center><form>
+              Choose the topic for Visualisation :&nbsp
+              <select id='1'>
+                <option value="pie" >Percentage of Each Crime</option>
+              </select>
+              <br><br>
+              <input type="button" value="Submit" onclick="myFunction1()">
+            </form></center>
+            <br><br>
 
-           <section class="main-banner">
-                  <!--BarCharts-->
-                  <br>Rape Cases<br>
-                  <iframe height="500px" width="90%" src="https://chart-studio.plotly.com/~kshitij7890/7.embed"></iframe><br><br><br>
-                  <br>Kidnapping and Abduction Cases<br>
-                  <iframe height="500px" width="90%" src="https://chart-studio.plotly.com/~kshitij7890/10.embed"></iframe><br><br><br>
-                  <br>Dowry death cases<br>
-                  <iframe height="500px" width="90%" src="https://chart-studio.plotly.com/~kshitij7890/16.embed"></iframe><br><br><br>
-                  <br>Importation of girls cases<br>
-                  <iframe height="500px" width="90%" src="https://chart-studio.plotly.com/~kshitij7890/22.embed"></iframe><br><br><br>
-          </section>
+            <div id="menu1">
+            </div>
+            <br><br>
 
-          <section class="main-banner">
-            <!-- Radial Plots -->
+            <script>
+              function myFunction1() {
+                if(document.getElementById('1').value == "pie") {
+                document.getElementById("menu1").innerHTML = '<center><iframe height="500px" width="100%" src="https://chart-studio.plotly.com/~kshitij7890/32.embed"></iframe><br><br><br></center>';
+                document.getElementById("menu3").innerHTML = '';
+                document.getElementById("menu2").innerHTML = '';
+                document.getElementById("menu4").innerHTML = '';}
+              }
+
+            </script></section>
+    <!----------------------------------------------------------------------------------->
+            <section class="main-banner"><br><br>
+            <h3><center>Rate of Change of various Crimes (BarCharts)</center></h3><br>
+            <center><form>
+              Choose the Crime :&nbsp
+              <select id='2'>
+                <option value="bar1" >Rape</option>
+                <option value="bar2" >Kidnapping and Abduction</option>
+                <option value="bar3" >Dowry death</option>
+                <option value="bar4" >Importation of girls </option>
+              </select>
+              <br><br>
+              <input type="button" value="Submit" onclick="myFunction2()">
+            </form></center>
+            <br><br>
+
+            <div id="menu2">
+            </div>
+
+
+            <!--<iframe height="500px" width="90%"src="https://chart-studio.plotly.com/~kshitij7890/59.embed"></iframe><br><br><br>
+            <iframe height="500px" width="90%"src="https://chart-studio.plotly.com/~kshitij7890/61.embed"></iframe><br><br><br>
+            <iframe height="500px" width="90%"src="https://chart-studio.plotly.com/~kshitij7890/63.embed"></iframe><br><br><br>
+            <iframe height="500px" width="90%"src="https://chart-studio.plotly.com/~kshitij7890/65.embed"></iframe><br><br><br>
+            <iframe height="500px" width="90%"src="https://chart-studio.plotly.com/~kshitij7890/67.embed"></iframe><br><br><br>-->
+
+            <script>
+              function myFunction2() {
+                if(document.getElementById('2').value == "bar1") {
+                document.getElementById("menu2").innerHTML = '<center><iframe height="500px" width="100%" src="https://chart-studio.plotly.com/~kshitij7890/7.embed"></iframe><br><br><br></center>';
+                document.getElementById("menu1").innerHTML = '';
+                document.getElementById("menu3").innerHTML = '';
+                document.getElementById("menu4").innerHTML = '';
+              }
+
+                if(document.getElementById('2').value == "bar2") {
+                document.getElementById("menu2").innerHTML = '<iframe height="500px" width="100%" src="https://chart-studio.plotly.com/~kshitij7890/10.embed"></iframe><br><br><br>';
+                document.getElementById("menu1").innerHTML = '';
+                document.getElementById("menu3").innerHTML = '';
+                document.getElementById("menu4").innerHTML = '';
+              }
+
+                if(document.getElementById('2').value == "bar3") {
+                document.getElementById("menu2").innerHTML = '<iframe height="500px" width="100%" src="https://chart-studio.plotly.com/~kshitij7890/16.embed"></iframe><br><br><br>';
+                document.getElementById("menu1").innerHTML = '';
+                document.getElementById("menu3").innerHTML = '';
+                document.getElementById("menu4").innerHTML = '';
+              }
+
+                if(document.getElementById('2').value == "bar4") {
+                document.getElementById("menu2").innerHTML = '<iframe height="500px" width="100%" src="https://chart-studio.plotly.com/~kshitij7890/22.embed"></iframe><br><br><br>';
+                document.getElementById("menu1").innerHTML = '';
+                document.getElementById("menu3").innerHTML = '';
+                document.getElementById("menu4").innerHTML = '';
+              }
+
+
+              }
+
+            </script></section>
+      <!----------------------------------------------------------------------------->
+      <section class="main-banner"><br><br>
+      <h3><center>Rate of Change of various Crimes (Radar Charts)</center></h3><br>
+      <center><form>
+        Choose the Crime :&nbsp
+        <select id='3'>
+          <option value="rad1">All at Once</option>
+          <option value="rad2">Rape</option>
+          <option value="rad3">Kidnapping and Abduction</option>
+          <option value="rad4">Dowry death</option>
+          <option value="rad5">Assault on women</option>
+          <option value="rad6">Insult to modesty of Women</option>
+          <option value="rad7">Cruelty by Husband or Relatives</option>
+          <option value="rad8">Importation of girls</option>
+        </select>
+        <br><br>
+        <input type="button" value="Submit" onclick="myFunction3()">
+      </form></center>
+      <br><br>
+
+      <div id="menu3">
+      </div>
+
+
+      <!--<iframe height="500px" width="90%"src="https://chart-studio.plotly.com/~kshitij7890/59.embed"></iframe><br><br><br>
+      <iframe height="500px" width="90%"src="https://chart-studio.plotly.com/~kshitij7890/61.embed"></iframe><br><br><br>
+      <iframe height="500px" width="90%"src="https://chart-studio.plotly.com/~kshitij7890/63.embed"></iframe><br><br><br>
+      <iframe height="500px" width="90%"src="https://chart-studio.plotly.com/~kshitij7890/65.embed"></iframe><br><br><br>
+      <iframe height="500px" width="90%"src="https://chart-studio.plotly.com/~kshitij7890/67.embed"></iframe><br><br><br>-->
+
+      <script>
+        function myFunction3() {
+          if(document.getElementById('3').value == "rad1") {
+          document.getElementById("menu3").innerHTML = '<center><iframe height="500px" width="100%" src="https://chart-studio.plotly.com/~kshitij7890/1.embed"></iframe><br><br><br></center>';
+          document.getElementById("menu1").innerHTML = '';
+          document.getElementById("menu2").innerHTML = '';
+          document.getElementById("menu4").innerHTML = '';
+           }
+
+          if(document.getElementById('3').value == "rad2") {
+          document.getElementById("menu3").innerHTML = '<iframe height="500px" width="100%" src="https://chart-studio.plotly.com/~kshitij7890/78.embed"></iframe><br><br><br>';
+          document.getElementById("menu1").innerHTML = '';
+          document.getElementById("menu2").innerHTML = '';
+          document.getElementById("menu4").innerHTML = '';
+           }
+
+          if(document.getElementById('3').value == "rad3") {
+          document.getElementById("menu3").innerHTML = '<iframe height="500px" width="100%" src="https://chart-studio.plotly.com/~kshitij7890/81.embed"></iframe><br><br><br>';
+          document.getElementById("menu1").innerHTML = '';
+          document.getElementById("menu2").innerHTML = '';
+          document.getElementById("menu4").innerHTML = '';
+           }
+
+          if(document.getElementById('3').value == "rad4") {
+          document.getElementById("menu3").innerHTML = '<iframe height="500px" width="100%" src="https://chart-studio.plotly.com/~kshitij7890/84.embed"></iframe><br><br><br>';
+          document.getElementById("menu1").innerHTML = '';
+          document.getElementById("menu2").innerHTML = '';
+          document.getElementById("menu4").innerHTML = '';
+           }
+
+          if(document.getElementById('3').value == "rad5") {
+          document.getElementById("menu3").innerHTML = '<iframe height="500px" width="100%" src="https://chart-studio.plotly.com/~kshitij7890/87.embed"></iframe><br><br><br>';
+          document.getElementById("menu1").innerHTML = '';
+          document.getElementById("menu2").innerHTML = '';
+          document.getElementById("menu4").innerHTML = '';
+           }
+
+          if(document.getElementById('3').value == "rad6") {
+          document.getElementById("menu3").innerHTML = '<iframe height="500px" width="100%" src="https://chart-studio.plotly.com/~kshitij7890/90.embed"></iframe><br><br><br>';
+          document.getElementById("menu1").innerHTML = '';
+          document.getElementById("menu2").innerHTML = '';
+          document.getElementById("menu4").innerHTML = '';
+           }
+
+          if(document.getElementById('3').value == "rad7") {
+          document.getElementById("menu3").innerHTML = '<iframe height="500px" width="100%" src="https://chart-studio.plotly.com/~kshitij7890/93.embed"></iframe><br><br><br>';
+          document.getElementById("menu1").innerHTML = '';
+          document.getElementById("menu2").innerHTML = '';
+          document.getElementById("menu4").innerHTML = '';
+           }
+
+          if(document.getElementById('3').value == "rad8") {
+          document.getElementById("menu3").innerHTML = '<iframe height="500px" width="100%" src="https://chart-studio.plotly.com/~kshitij7890/96.embed"></iframe><br><br><br>';
+          document.getElementById("menu1").innerHTML = '';
+          document.getElementById("menu2").innerHTML = '';
+          document.getElementById("menu4").innerHTML = '';
+           }
+
+
+        }
+
+      </script></section>
+
+          <!----------------------------------------------------------------------------->
+          <section class="main-banner"><br><br>
+          <h3><center>Intercorrelation between various Crime heads</center></h3><br>
+          <center><form>
+            Choose the topic for Visualisation :&nbsp
+            <select id='4'>
+              <option value="heatmap" >Intercorrelation between crime heads</option>
+            </select>
+            <br><br>
+            <input type="button" value="Submit" onclick="myFunction4()">
+          </form></center>
+          <br><br>
+
+          <div id="menu4">
+          </div>
+          
+
+          <script>
+            function myFunction4() {
+              if(document.getElementById('4').value == "heatmap") {
+              document.getElementById("menu4").innerHTML = '<center><iframe height="500px" width="100%" src="chart_files/extras/heatmap1.html"></iframe><br><br><br></center>';
+              document.getElementById("menu1").innerHTML = '';
+              document.getElementById("menu2").innerHTML = '';
+              document.getElementById("menu3").innerHTML = '';
+              }
+            }
+
+          </script>
+        </section>
+
+          <!----------------------------------------------------------------------------->
+
+            <!-- Radial Plots
             <br>Radial<br>
             <iframe height="500px" width="90%" src="https://chart-studio.plotly.com/~kshitij7890/1.embed"></iframe><br><br><br>
-            <!-- For each crime separately (Radial Plots)  -->
+
             <br>Rape Cases<br>
             <iframe height="500px" width="90%" src="https://chart-studio.plotly.com/~kshitij7890/78.embed"></iframe><br><br><br>
             <br>Kidnapping and Abduction Cases<br>
@@ -72,9 +266,11 @@
             <br>Cruelty by Husband or Relatives cases<br>
             <iframe height="500px" width="90%" src="https://chart-studio.plotly.com/~kshitij7890/93.embed"></iframe><br><br><br>
             <br>Importation of girls cases<br>22
-            <iframe height="500px" width="90%" src="https://chart-studio.plotly.com/~kshitij7890/96.embed"></iframe><br><br><br>
-         </section>
+            <iframe height="500px" width="90%" src="https://chart-studio.plotly.com/~kshitij7890/96.embed"></iframe><br><br><br>-->
 
+
+
+         <!--<iframe height="500px" width="90%" src="chart_files/extras/heatmap1.html"></iframe><br><br><br>-->
 
           </div>
         </div>

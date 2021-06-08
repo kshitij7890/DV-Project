@@ -40,11 +40,65 @@
 
             <section class="main-banner">
               <!-- Piecharts for each state -->
-              <iframe height="500px" width="100%"src="chart_files/extras/Colourful%20line%20chart%20victims%20age%20grp%20.html"></iframe><br><br><br>
-              <iframe height="500px" width="100%"src="chart_files/extras/Unreported%20cases%20Bar%20chart.html"></iframe><br><br><br>
+
+              <h3><center>Rape Victims</center></h3><br>
+              <center><form>
+                Choose the type of Visualisation :&nbsp
+                <select id='1'>
+                  <option value="multi" >Multi Line Chart</option>
+                  <option value="heat" >Heatmap</option>
+                  <option value="cluster" >Clustered Bar Chart</option>
+                  <option value="donut" >Donut Chart</option>
+                  <option value="pie" >Pie Chart</option>
+                </select>
+                <br><br>
+                <input type="button" value="Submit" onclick="myFunction1()">
+              </form></center>
+              <br><br>
+
+              <div id="menu1">
+              </div>
+
+              <!--<iframe height="500px" width="90%"src="https://chart-studio.plotly.com/~kshitij7890/59.embed"></iframe><br><br><br>
+              <iframe height="500px" width="90%"src="https://chart-studio.plotly.com/~kshitij7890/61.embed"></iframe><br><br><br>
+              <iframe height="500px" width="90%"src="https://chart-studio.plotly.com/~kshitij7890/63.embed"></iframe><br><br><br>
+              <iframe height="500px" width="90%"src="https://chart-studio.plotly.com/~kshitij7890/65.embed"></iframe><br><br><br>
+              <iframe height="500px" width="90%"src="https://chart-studio.plotly.com/~kshitij7890/67.embed"></iframe><br><br><br>-->
+
+              <script>
+                function myFunction1() {
+                  if(document.getElementById('1').value == "multi") {
+                  document.getElementById("menu1").innerHTML = '<center><iframe height="630px" width="100%"src="chart_files/extras/Colourful%20line%20chart%20victims%20age%20grp%20.html"></iframe><br><br><br></center>';
+                   }
+
+                  if(document.getElementById('1').value == "heat") {
+                  document.getElementById("menu1").innerHTML = '<iframe height="750px" width="100%" src="chart_files/extras/heatmap2.html"></iframe><br><br><br>';
+                  }
+
+                  if(document.getElementById('1').value == "cluster") {
+                  document.getElementById("menu1").innerHTML = '<iframe height="570px" width="100%" src="chart_files/extras/victim1.html"></iframe><br><br><br>';
+                  }
+
+                  if(document.getElementById('1').value == "donut") {
+                  document.getElementById("menu1").innerHTML = '<iframe height="500px" width="100%" src="chart_files/extras/victim2.html"></iframe><br><br><br>';
+                  }
+
+                  if(document.getElementById('1').value == "pie") {
+                  document.getElementById("menu1").innerHTML = '<iframe height="500px" width="100%" src="chart_files/extras/victim3.html"></iframe><br><br><br>';
+                  }
+
+
+                }
+
+              </script>
+
+
+              <!--<iframe height="500px" width="100%"src="chart_files/extras/Colourful%20line%20chart%20victims%20age%20grp%20.html"></iframe><br><br><br>
+              <iframe height="500px" width="90%" src="chart_files/extras/heatmap2.html"></iframe><br><br><br>
               <iframe height="500px" width="90%" src="chart_files/extras/victim1.html"></iframe><br><br><br>
               <iframe height="500px" width="90%" src="chart_files/extras/victim2.html"></iframe><br><br><br>
-              <iframe height="500px" width="90%" src="chart_files/extras/victim3.html"></iframe><br><br><br>
+              <iframe height="500px" width="90%" src="chart_files/extras/victim3.html"></iframe><br><br><br>-->
+
             </section>
 
           </div>

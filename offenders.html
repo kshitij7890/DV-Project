@@ -38,9 +38,50 @@
               </div>
             </header>
 
-            <iframe height="500px" width="90%" src="chart_files/extras/offender1.html"></iframe><br><br><br>
+            <h3><center>Offenders Known/Unknown to Victim</center></h3><br>
+            <center><form>
+              Choose the type of Visualisation :&nbsp
+              <select id='1'>
+                <option value="donut" >Donut Chart</option>
+                <option value="geo" >Geomap Plot</option>
+                <option value="pie" >Pie Chart</option>
+              </select>
+              <br><br>
+              <input type="button" value="Submit" onclick="myFunction1()">
+            </form></center>
+            <br><br>
+
+            <div id="menu1">
+            </div>
+
+            <!--<iframe height="500px" width="90%"src="https://chart-studio.plotly.com/~kshitij7890/59.embed"></iframe><br><br><br>
+            <iframe height="500px" width="90%"src="https://chart-studio.plotly.com/~kshitij7890/61.embed"></iframe><br><br><br>
+            <iframe height="500px" width="90%"src="https://chart-studio.plotly.com/~kshitij7890/63.embed"></iframe><br><br><br>
+            <iframe height="500px" width="90%"src="https://chart-studio.plotly.com/~kshitij7890/65.embed"></iframe><br><br><br>
+            <iframe height="500px" width="90%"src="https://chart-studio.plotly.com/~kshitij7890/67.embed"></iframe><br><br><br>-->
+
+            <script>
+              function myFunction1() {
+                if(document.getElementById('1').value == "donut") {
+                document.getElementById("menu1").innerHTML = '<center><iframe height="530px" width="100%" src="chart_files/extras/offender1.html"></iframe><br><br><br></center>';
+                 }
+
+                if(document.getElementById('1').value == "geo") {
+                document.getElementById("menu1").innerHTML = '<iframe height="530px" width="100%" src="chart_files/extras/offender2.html"></iframe><br><br><br>';
+                }
+
+                if(document.getElementById('1').value == "pie") {
+                document.getElementById("menu1").innerHTML = '<iframe height="530px" width="100%" src="chart_files/extras/offender3.html"></iframe><br><br><br>';
+                }
+
+
+              }
+
+            </script>
+
+            <!--<iframe height="500px" width="90%" src="chart_files/extras/offender1.html"></iframe><br><br><br>
             <iframe height="500px" width="90%" src="chart_files/extras/offender2.html"></iframe><br><br><br>
-            <iframe height="500px" width="90%" src="chart_files/extras/offender3.html"></iframe><br><br><br>
+            <iframe height="500px" width="90%" src="chart_files/extras/offender3.html"></iframe><br><br><br>-->
 
 
           </div>

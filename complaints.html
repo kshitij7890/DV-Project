@@ -38,11 +38,57 @@
               </div>
             </header>
 
-           <iframe height="500px" width="100%" src="https://chart-studio.plotly.com/~kshitij7890/3.embed"></iframe><br><br><br>
+            <h3><center>Complaints Registered</center></h3><br>
+            <center><form>
+              Choose the type of Visualisation :&nbsp
+              <select id='1'>
+                <option value="stacked_area" >Stacked Area Chart</option>
+                <option value="funnel" >Funnel Chart</option>
+                <option value="wordcloud" >Word Cloud</option>
+                <option value="stacked_bar" >Stacked Bar Chart</option>
+              </select>
+              <br><br>
+              <input type="button" value="Submit" onclick="myFunction1()">
+            </form></center>
+            <br><br>
+
+            <div id="menu1">
+            </div>
+            <div id="menu2">
+            </div>
+
+            <script>
+              function myFunction1() {
+                if(document.getElementById('1').value == "stacked_area") {
+                document.getElementById("menu1").innerHTML = '<center><iframe height="500px" width="100%" src="https://chart-studio.plotly.com/~kshitij7890/3.embed"></iframe><br><br><br></center>';
+                document.getElementById("menu2").innerHTML = '';
+                }
+
+                if(document.getElementById('1').value == "funnel") {
+                document.getElementById("menu1").innerHTML = '<iframe height="500px" width="100%" src="https://chart-studio.plotly.com/~kshitij7890/5.embed"></iframe><br><br><br>';
+                document.getElementById("menu2").innerHTML = '';
+                }
+
+                if(document.getElementById('1').value == "wordcloud") {
+                document.getElementById("menu1").innerHTML = '<iframe height="480px" width="100%" src="chart_files/extras/333.html"></iframe><br><br><br>';
+                document.getElementById("menu2").innerHTML = '';
+                }
+
+                if(document.getElementById('1').value == "stacked_bar") {
+                document.getElementById("menu1").innerHTML = '<iframe height="480px" width="100%" src="chart_files/extras/111.html"></iframe><br><br><br>';
+                document.getElementById("menu2").innerHTML = '<iframe height="480px" width="100%" src="chart_files/extras/222.html"></iframe><br><br><br>';
+                }
+
+
+              }
+
+            </script>
+
+           <!--<iframe height="500px" width="100%" src="https://chart-studio.plotly.com/~kshitij7890/3.embed"></iframe><br><br><br>
            <iframe height="500px" width="100%" src="https://chart-studio.plotly.com/~kshitij7890/5.embed"></iframe><br><br><br>
            <iframe height="500px" width="100%" src="chart_files/extras/111.html"></iframe><br><br><br>
            <iframe height="500px" width="100%" src="chart_files/extras/222.html"></iframe><br><br><br>
-           <iframe height="500px" width="100%" src="chart_files/extras/333.html"></iframe><br><br><br>
+           <iframe height="500px" width="100%" src="chart_files/extras/333.html"></iframe><br><br><br>-->
 
           </div>
         </div>

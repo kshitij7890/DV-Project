@@ -38,9 +38,50 @@
               </div>
             </header>
 
-            <iframe height="500px" width="90%" src="chart_files/extras/insti1.html"></iframe><br><br><br>
-            <iframe height="500px" width="90%" src="chart_files/extras/insti2.html"></iframe><br><br><br>
-            <iframe height="500px" width="90%" src="chart_files/extras/insti3.html"></iframe><br><br><br>
+            <h3><center>Instigators of Violence</center></h3><br>
+            <center><form>
+              Choose the type of Visualisation :&nbsp
+              <select id='1'>
+                <option value="treemap" >Treemap</option>
+                <option value="stacked_bar" >Stacked Bar Chart</option>
+                <option value="scatter" >Scatter Plot</option>
+              </select>
+              <br><br>
+              <input type="button" value="Submit" onclick="myFunction1()">
+            </form></center>
+            <br><br>
+
+            <div id="menu1">
+            </div>
+
+            <!--<iframe height="500px" width="90%"src="https://chart-studio.plotly.com/~kshitij7890/59.embed"></iframe><br><br><br>
+            <iframe height="500px" width="90%"src="https://chart-studio.plotly.com/~kshitij7890/61.embed"></iframe><br><br><br>
+            <iframe height="500px" width="90%"src="https://chart-studio.plotly.com/~kshitij7890/63.embed"></iframe><br><br><br>
+            <iframe height="500px" width="90%"src="https://chart-studio.plotly.com/~kshitij7890/65.embed"></iframe><br><br><br>
+            <iframe height="500px" width="90%"src="https://chart-studio.plotly.com/~kshitij7890/67.embed"></iframe><br><br><br>-->
+
+            <script>
+              function myFunction1() {
+                if(document.getElementById('1').value == "treemap") {
+                document.getElementById("menu1").innerHTML = '<center><iframe height="700px" width="100%" src="chart_files/extras/insti1.html"></iframe><br><br><br></center>';
+                 }
+
+                if(document.getElementById('1').value == "stacked_bar") {
+                document.getElementById("menu1").innerHTML = '<iframe height="550px" width="100%" src="chart_files/extras/insti2.html"></iframe><br><br><br>';
+                }
+
+                if(document.getElementById('1').value == "scatter") {
+                document.getElementById("menu1").innerHTML = '<iframe height="550px" width="100%" src="chart_files/extras/insti3.html"></iframe><br><br><br>';
+                }
+
+
+              }
+
+            </script>
+
+            <!--<iframe height="500px" width="100%" src="chart_files/extras/insti1.html"></iframe><br><br><br>
+            <iframe height="500px" width="100%" src="chart_files/extras/insti2.html"></iframe><br><br><br>
+            <iframe height="500px" width="100%" src="chart_files/extras/insti3.html"></iframe><br><br><br>-->
 
 
           </div>
